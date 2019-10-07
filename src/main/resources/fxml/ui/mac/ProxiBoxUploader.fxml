@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="main-pane" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="690.0"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+		<AnchorPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+			<children>
+				<Pane id="header" prefHeight="40.0" prefWidth="680.0"  AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+					<children>
+						<ImageView id="app-header1" fitHeight="28.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+					</children>               
+				</Pane>
+				<Label id="label20b" layoutX="29.0" layoutY="52.0"  text="FILE UPLOADER"  />                    
+				<Pane id="uploader-pane" layoutX="29.0" layoutY="86.0" prefHeight="361.0" prefWidth="622.0" >
+					<children>
+						<Label id="label13" layoutX="13.0" layoutY="14.0" text="FILE" />                            
+						<JFXTextField id="uploader-fields" fx:id="fileField" editable="false" layoutX="13.0" layoutY="33.0" prefHeight="40.0" prefWidth="446.0"  />                                    
+						<JFXButton id="prxbx-btn" fx:id="browserBtn" layoutX="467.0" layoutY="34.0" onAction="#browseBtn" prefHeight="38.0" prefWidth="137.0"  text="BROWSE" />                            
+						<JFXProgressBar id="upload-progress" fx:id="progressBar" layoutX="13.0" layoutY="97.0" prefHeight="0.0" prefWidth="593.0" />
+						<Label id="label13" layoutX="13.0" layoutY="107.0" text="ADDRESS" />                            
+						<JFXTextField id="uploader-fields" fx:id="addressField" layoutX="13.0" layoutY="126" prefHeight="40.0" prefWidth="593.0" promptText="Address"  />                            
+						<Label id="label13" layoutX="14.0" layoutY="185.0" text="TYPE" />                            
+						<JFXComboBox id="uploader-fields" fx:id="uptypeCbx" layoutX="13.0" layoutY="204.0" prefHeight="40.0" prefWidth="593.0" promptText="Select upload method" >
+							<items>
+								<FXCollections fx:factory="observableArrayList" />
+							</items>
+						</JFXComboBox>                  
+						<Label id="label13" fx:id="passwdLbl" layoutX="14.0" layoutY="256.0" text="PASSWORD" />                            
+						<JFXTextField id="uploader-fields" fx:id="passwdField" layoutX="13.0" layoutY="275.0" prefHeight="40.0" prefWidth="593.0" promptText="Secure password"  />                        
+					</children>
+				</Pane>
+			</children>
+		</AnchorPane>
+		<JFXButton id="prxbx-btn" fx:id="uploadBtn" layoutX="342.0" layoutY="428.0" onAction="#uploadFile" prefHeight="38.0" prefWidth="137.0"  text="UPLOAD" />            
+		<JFXButton id="prxbx-btn" fx:id="cancelBtn" layoutX="496.0" layoutY="428.0" onAction="#closeBtn" prefHeight="38.0" prefWidth="137.0"  text="CLOSE" />            
+    </children>
+</AnchorPane>

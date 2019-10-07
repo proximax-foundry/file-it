@@ -1,0 +1,451 @@
+.root 
+{
+    -fx-font: 12px Lato;
+}
+#shadow-pane
+{
+    -fx-background-color: transparent;    
+}
+#main-pane
+{
+    -fx-background-color: #D6E1E9;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.5, 0.0, 0.0);    
+}
+#login-line
+{
+    -fx-background-color: white;
+}
+#comment-lbl
+{
+    -fx-text-fill:#193549;
+}
+#pwr-lbl
+{
+    -fx-font:15px "Lato";    
+    -fx-text-fill:black;    
+}
+#user-lbl
+{
+    -fx-font:18px "Lato Black";    
+    -fx-text-fill:#193549; 
+    -fx-font-weight:bold;   	
+}
+#level-lbl
+{
+    -fx-font:11px "Lato Regular";    
+    -fx-text-fill:#193549; 	
+}
+#title-lbl
+{
+    -fx-font:23px "Lato";    
+    -fx-text-fill:white;    	
+    -fx-font-weight:bold;    
+}
+#label20b
+{
+    -fx-font:20px "Lato Black";    
+    -fx-text-fill:#193549;
+    -fx-font-weight:bold;
+}
+#label13b
+{
+    -fx-font:13px "Lato Black";    
+    -fx-text-fill:#193549;
+    -fx-font-weight:bold;
+}
+#label13
+{
+    -fx-font:13px "Lato Regular"; 
+    -fx-text-fill:#193549;    	    
+}
+#error-lbl
+{
+    -fx-font:13px "Lato Regular"; 
+    -fx-text-fill:red;  
+}
+#error-title
+{
+    -fx-font:20px "Lato Black";    
+    -fx-text-fill:#193549;
+    -fx-font-weight:bold;
+}
+#error-msg
+{
+    -fx-font:15px "Lato Regular"; 
+    -fx-text-fill:#193549;    	    
+}
+#prxbx-btn
+{
+    -fx-background-color:#326B91;
+    -fx-background-radius:5px;
+    -fx-text-fill:white;
+    -fx-font:15px "Lato";
+    -fx-font-weight:bold;
+}
+#prfl-img
+{
+    -fx-background-radius:20px; 
+}
+#app-logo1
+{
+    -fx-image: url("Light/img/proxifileitw.png");
+}
+#app-logo2
+{
+    -fx-image: url("Light/img/proxifileitd.png");    
+}
+#app-header1
+{
+    -fx-image: url("Light/img/fileitw.png");    
+}
+#app-header2
+{
+    -fx-image: url("Light/img/fileitd.png");    
+}
+#app-icon
+{
+    -fx-image: url("Light/img/proxibox-icon.png");    
+}
+#close-img
+{
+    -fx-image: url("Light/img/close.png");    
+}
+#min-img
+{
+    -fx-image: url("Light/img/minimize.png");    
+}
+#max-img
+{
+    -fx-image: url("Light/img/maximize.png");    
+}
+#user-img
+{
+    -fx-image: url("Light/img/user.png");    
+}
+#home-img
+{
+    -fx-image: url("Light/img/home.png");    
+}
+#allfiles-img
+{
+    -fx-image: url("Light/img/allfiles.png");    
+}
+#sharing-img
+{
+    -fx-image: url("Light/img/sharing.png");    
+}
+#filerequest-img
+{
+    -fx-image: url("Light/img/filerequest.png");    
+}
+#logout-img
+{
+    -fx-image: url("Light/img/logout.png");    
+}
+#search-img
+{
+    -fx-image: url("Light/img/search.png");    
+}
+#upload-img
+{
+    -fx-image: url("Light/img/upload.png");    
+}
+#upload-img1
+{
+    -fx-image: url("Light/img/upload-w.png");    
+}
+#proximax-logo
+{
+    -fx-image: url("Light/img/ProximaX-Logo.png")
+}
+#error-img
+{
+    -fx-image: url("Light/img/error.png")
+}
+#folder-img
+{
+    -fx-image: url("Light/img/folder.png")
+}
+#nfolder-img
+{
+    -fx-image: url("Light/img/newfolder.png")
+}
+#view-img
+{
+    -fx-image: url("Light/img/view.png")
+}
+#download-img
+{
+    -fx-image: url("Light/img/download.png")
+}
+#edit-img
+{
+    -fx-image: url("Light/img/edit.png")
+}
+#history-img
+{
+    -fx-image: url("Light/img/history.png")
+}
+#sharing-img-d
+{
+    -fx-image: url("Light/img/sharing.png");    
+}
+#themes-img
+{
+    -fx-image: url("Light/img/themes.png")
+}
+#nightmode-img
+{
+    -fx-image: url("Light/img/nightmode.png")
+}
+#netcfg-img
+{
+    -fx-image: url("Light/img/netcfgw.png")
+}
+#netcfg1-img
+{
+    -fx-image: url("Light/img/netcfg.png")
+}
+#add-img
+{
+    -fx-image: url("Light/img/add.png")
+}
+#remove-img
+{
+    -fx-image: url("Light/img/remove.png")
+}
+#home-sidebar
+{
+    -fx-background-color: #D6E1E9;
+}
+#profile-pane
+{
+    -fx-background-color: #D6E1E9;
+}
+#nav-togbtn1
+{
+    -fx-text-fill:#193549;
+    -fx-font:15px "Lato Black";    
+    -fx-background-color: transparent;
+}
+#nav-togbtn1:focused
+{
+    -fx-text-fill:#193549;
+    -fx-font:15px "Lato Black"; 
+    -fx-background-color: transparent;
+}
+#nav-togbtn 
+{
+    -jfx-toggle-color: #193549;
+    -jfx-untoggle-color: #FAFAFA;
+    -jfx-toggle-line-color: #326B91;
+    -jfx-untoggle-line-color: #999999;
+    -jfx-size: 5.0;
+    -jfx-disable-visual-focus: false;
+}
+#nav-tbtn
+{
+    -fx-text-fill:#193549;
+    -fx-font:15px "Lato Black";    
+    -fx-background-color: transparent;
+}
+#nav-tbtn:selected
+{
+    -fx-text-fill:white;
+    -fx-font:15px "Lato Black";
+    -fx-font-weight:bold;    
+    -fx-background-color: #326B91;
+}
+#nav-btn
+{
+    -fx-text-fill:#193549;
+    -fx-font:15px "Lato Black";        
+}
+#nav-btn:focused
+{
+    -fx-text-fill:white;
+    -fx-font:15px "Lato Black";
+    -fx-font-weight:bold;    
+    -fx-background-color: #326B91;
+}
+#nav-btn1
+{
+    -fx-text-fill:#193549;
+    -fx-font:15px "Lato Black";    
+    -fx-background-color: #326B91;
+}
+#nav-btn1:focused
+{
+    -fx-text-fill:white;
+    -fx-font:15px "Lato Black";
+    -fx-font-weight:bold;    
+    -fx-background-color: #326B91;
+}
+#upload-btn
+{
+    -fx-text-fill:white;
+    -fx-font:15px "Lato"; 
+}
+#upload-btn:focused
+{
+    -fx-text-fill:white;
+    -fx-font:15px "Lato";
+    -fx-font-weight:bold;
+}
+#header
+{
+    -fx-background-color: #326B91;
+    -fx-padding: 16px;
+}
+#search-bar
+{
+    -fx-prompt-text-fill: gray;
+}
+#login-account
+{
+    -fx-background-color:#ffffff;
+    -fx-font:15px "Lato";
+    -fx-padding: 4px;
+}
+#register-field
+{
+    -fx-background-color: #ffffff;
+    -fx-font:15px "Lato";
+}
+#reg-checkbox
+{
+    -fx-text-fill: #193549;
+    -fx-font:17px "Lato";
+}
+#reg-lbl
+{
+    -fx-font:24px "Lato";
+    -fx-text-fill: #193549;
+    -fx-font-weight:bold;
+}
+#title-pane
+{
+    -fx-background-color:  #326b91;
+    -fx-padding: 0 10 0 10;
+}
+#center-pane
+{
+    -fx-background-color:  #f1f2f2;
+}
+#bottom-pane
+{
+    -fx-background-color:  #192B38;
+}
+
+#node-combo
+{
+    -fx-background-color:  #D6E1E9;
+}
+
+#uploader-pane
+{
+    -fx-border-color: #326B91;
+}
+#uploader-fields
+{
+    -fx-background-color:#FFFFFF;
+    -fx-font:15px "Lato Regular";
+    -fx-text-fill: #193549;	
+    -fx-padding: 4px;
+}
+#search-field
+{
+    -fx-font:18px "Lato";
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: white;        
+}
+#upload-progress .bar
+{    
+    -fx-background-color: #326B91;
+}
+.table-view 
+{    
+    -fx-font:15px "Lato";        
+    -fx-table-cell-border-color: #78B6E4;
+}
+.table-view .table-row-cell 
+{
+    -fx-cell-size: 35px;
+    -fx-border-width: 1px;    
+}
+.status-bar 
+{
+    -fx-padding: 4px;
+    -fx-pref-height: 40px;
+    -fx-background-color: #D6E1E9;
+    -fx-body-color:#D6E1E9;
+    -fx-background-insets: 0, 1;
+}
+.status-bar > .center-items,
+.status-bar > .left-items,
+.status-bar > .right-items 
+{
+    -fx-alignment: center; 
+}
+.status-label 
+{
+    -fx-font:15px "Lato";
+    -fx-text-fill: #193549;	
+}
+.status-combox 
+{
+    -fx-font:15px "Lato";
+    -jfx-focus-color: #D6E1E9;
+    -jfx-unfocus-color: #D6E1E9;	
+}
+.status-combox > .cell
+{
+    -fx-font:15px "Lato";
+    -fx-text-fill: #193549;	
+}
+.status-combox > .list-view > .list-cell
+{
+    -fx-font:15px "Lato";
+}
+.status-green 
+{
+    -fx-graphic: url("Light/img/green.png")
+}
+.status-red 
+{
+    -fx-graphic: url("Light/img/red.png")
+}
+
+.button.pressed { -fx-background-color: ghostwhite; }
+
+.button, .toggle-button {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+.button.loadfile { -fx-background-image: url("Light/img/new.png"); }
+.button.savefile { -fx-background-image: url("Light/img/save.png"); }
+.button.new { -fx-background-image: url("Light/img/new.png") }
+.button.undo { -fx-background-image: url("Light/img/undo.png"); }
+.button.redo { -fx-background-image: url("Light/img/redo.png"); }
+.button.cut { -fx-background-image: url("Light/img/cut.png"); }
+.button.copy { -fx-background-image: url("Light/img/copy.png"); }
+.button.paste { -fx-background-image: url("Light/img/paste.png"); }
+.button.bold { -fx-background-image: url("Light/img/bold.png"); }
+.button.italic { -fx-background-image: url("Light/img/italic.png"); }
+.button.underline { -fx-background-image: url("Light/img/underline.png"); }
+.button.strikethrough { -fx-background-image: url("Light/img/strikethrough.png"); }
+.button.insertimage { -fx-background-image: url("Light/img/insertimage.png"); }
+.toggle-button.wrap { -fx-background-image: url("Light/img/wrap.png"); }
+
+#view-btn
+{    
+    -fx-background-color: #326B91;
+    -fx-text-fill:white;    
+    -fx-font:15px "Lato Bold"; 
+    -fx-font-weight:bold;    
+    -fx-graphic: url("Light/img/vieww.png");
+}
+#view-btn:selected
+{ 
+    -fx-graphic: url("Light/img/hide.png");
+}

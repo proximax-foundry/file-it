@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="shadow-pane" fx:id="shadowPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="690.0"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane id="main-pane" fx:id="mainPane" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+            <children>
+                <AnchorPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <children>
+                        <Pane id="header" prefHeight="40.0" prefWidth="680.0"  AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <children>
+                                <ImageView id="app-header1" fitHeight="28.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+                            </children>               
+                        </Pane>
+                        <Label fx:id="titleLbl" id="label20b" layoutX="29.0" layoutY="52.0"  text="NEW FOLDER"  />                    
+                        <Pane id="uploader-pane" layoutX="29.0" layoutY="86.0" prefHeight="120.0" prefWidth="622.0" >
+                            <children>
+                                <Label fx:id="folderLbl" id="label13" layoutX="13.0" layoutY="14.0" text="FOLDER" />                            
+                                <JFXTextField id="uploader-fields" fx:id="folderField" layoutX="13.0" layoutY="33.0" prefHeight="40.0" prefWidth="593.0"/>
+                                <JFXComboBox visible="false" id="uploader-fields" fx:id="folderCbx" layoutX="13.0" layoutY="33.0" prefHeight="40.0" prefWidth="593.0" >
+                                    <items>
+                                        <FXCollections fx:factory="observableArrayList" />
+                                    </items>
+                                </JFXComboBox>
+                            </children>
+                        </Pane>
+                    </children>
+                </AnchorPane>
+                <JFXButton id="prxbx-btn" fx:id="folderBtn" layoutX="342.0" layoutY="188.0" onAction="#folderBtn" prefHeight="38.0" prefWidth="137.0"  text="CREATE" />            
+                <JFXButton id="prxbx-btn" layoutX="496.0" layoutY="188.0" onAction="#closeBtn" prefHeight="38.0" prefWidth="137.0"  text="CANCEL" />            
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

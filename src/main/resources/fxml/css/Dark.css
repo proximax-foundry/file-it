@@ -1,0 +1,451 @@
+.root 
+{
+    -fx-font: 12px Lato;
+}
+#shadow-pane
+{
+    -fx-background-color: transparent;    
+}
+#main-pane
+{
+    -fx-background-color: #193549;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.5, 0.0, 0.0);    
+
+}
+#login-line
+{
+    -fx-background-color: white;
+}
+#comment-lbl
+{
+    -fx-text-fill:white;
+}
+#pwr-lbl
+{
+    -fx-font:15px "Lato";    
+    -fx-text-fill:white;
+}
+#user-lbl
+{
+    -fx-font:18px "Lato Black";    
+    -fx-text-fill:white; 
+    -fx-font-weight:bold;   	
+}
+#level-lbl
+{
+    -fx-font:11px "Lato Regular";    
+    -fx-text-fill:#78B6E4; 	
+}
+#title-lbl
+{
+    -fx-font:23px "Lato";    
+    -fx-text-fill:white;    	
+    -fx-font-weight:bold;
+}
+#label20b
+{
+    -fx-font:20px "Lato Black";    
+    -fx-text-fill:white;    	
+    -fx-font-weight:bold;    
+}
+#label13b
+{
+    -fx-font:13px "Lato Black";    
+    -fx-text-fill:white;    	
+    -fx-font-weight:bold;    
+}
+#label13
+{
+    -fx-font:13px "Lato Regular"; 
+    -fx-text-fill:white;    	    
+}
+#error-lbl
+{
+    -fx-font:13px "Lato Regular"; 
+    -fx-text-fill:red;  
+}
+#error-title
+{
+    -fx-font:20px "Lato Black";    
+    -fx-text-fill:white;
+    -fx-font-weight:bold;
+}
+#error-msg
+{
+    -fx-font:15px "Lato Regular"; 
+    -fx-text-fill:white;    	    
+}
+#prxbx-btn
+{
+    -fx-background-color:#326B91;
+    -fx-background-radius:5px;
+    -fx-text-fill:white;
+    -fx-font:15px "Lato";
+    -fx-font-weight:bold;
+}
+#nav-btn1
+{
+    -fx-text-fill:#193549;
+    -fx-font:15px "Lato Black";    
+    -fx-background-color: #326B91;
+}
+#nav-btn1:focused
+{
+    -fx-text-fill:white;
+    -fx-font:15px "Lato Black";
+    -fx-font-weight:bold;    
+    -fx-background-color: #326B91;
+}
+#prfl-img
+{
+    -fx-background-radius:20px; 
+}
+#app-logo1
+{
+    -fx-image: url("Light/img/proxifileitd.png");
+}
+#app-logo2
+{
+    -fx-image: url("Light/img/proxifileitw.png");    
+}
+#app-header1
+{
+    -fx-image: url("Light/img/fileitw.png");    
+}
+#app-header2
+{
+    -fx-image: url("Light/img/fileitd.png");    
+}
+#app-logo1
+{
+    -fx-image: url("Dark/img/Proxibox-Logo2.png");    
+}
+#app-logo3
+{
+    -fx-image: url("Dark/img/Proxibox-Logo3.png");    
+}
+#app-icon
+{
+    -fx-image: url("Dark/img/proxibox-icon.png");    
+}
+#close-img
+{
+    -fx-image: url("Dark/img/close.png");    
+}
+#min-img
+{
+    -fx-image: url("Dark/img/minimize.png");    
+}
+#max-img
+{
+    -fx-image: url("Dark/img/maximize.png");    
+}
+#user-img
+{
+    -fx-image: url("Dark/img/user.png");    
+}
+#home-img
+{
+    -fx-image: url("Dark/img/home.png");    
+}
+#allfiles-img
+{
+    -fx-image: url("Dark/img/allfiles.png");    
+}
+#sharing-img
+{
+    -fx-image: url("Dark/img/sharing-w.png");    
+}
+#filerequest-img
+{
+    -fx-image: url("Dark/img/filerequest.png");    
+}
+#logout-img
+{
+    -fx-image: url("Dark/img/logout.png");    
+}
+#search-img
+{
+    -fx-image: url("Dark/img/search.png");    
+}
+#upload-img
+{
+    -fx-image: url("Dark/img/upload.png");    
+}
+#upload-img1
+{
+    -fx-image: url("Dark/img/upload-w.png");    
+}
+#error-img
+{
+    -fx-image: url("Dark/img/error.png")
+}
+#folder-img
+{
+    -fx-image: url("Dark/img/folder.png")
+}
+#nfolder-img
+{
+    -fx-image: url("Dark/img/newfolder.png")
+}
+#view-img
+{
+    -fx-image: url("Dark/img/view.png")
+}
+#download-img
+{
+    -fx-image: url("Dark/img/download.png")
+}
+#edit-img
+{
+    -fx-image: url("Dark/img/edit.png")
+}
+#history-img
+{
+    -fx-image: url("Dark/img/history.png")
+}
+#sharing-img-d
+{
+    -fx-image: url("Dark/img/sharing.png");    
+}
+#themes-img
+{
+    -fx-image: url("Dark/img/themes.png")
+}
+#nightmode-img
+{
+    -fx-image: url("Dark/img/nightmode.png")
+}
+#proximax-logo
+{
+    -fx-image: url("Dark/img/ProximaX-Logo.png")
+}
+#netcfg-img
+{
+    -fx-image: url("Dark/img/netcfg.png")
+}
+#netcfg1-img
+{
+    -fx-image: url("Dark/img/netcfg.png")
+}
+#add-img
+{
+    -fx-image: url("Light/img/add.png")
+}
+#remove-img
+{
+    -fx-image: url("Light/img/remove.png")
+}
+#home-sidebar
+{
+    -fx-background-color: #193549;
+}
+#profile-pane
+{
+    -fx-background-color: #193549;
+}
+#nav-togbtn1
+{
+    -fx-text-fill:white;
+    -fx-font:15px "Lato Black";    
+    -fx-background-color: transparent;
+}
+#nav-togbtn1:focused
+{
+    -fx-text-fill:white;
+    -fx-font:15px "Lato Black"; 
+    -fx-background-color: transparent;
+}
+#nav-togbtn 
+{
+    -jfx-toggle-color: #D6E1E9;
+    -jfx-untoggle-color: #FAFAFA;
+    -jfx-toggle-line-color: #326B91;
+    -jfx-untoggle-line-color: #999999;
+    -jfx-size: 5.0;
+    -jfx-disable-visual-focus: false;
+}
+#nav-tbtn
+{	
+    -fx-text-fill:white;
+    -fx-font:15px "Lato Black";    
+    -fx-background-color: transparent;
+}
+#nav-tbtn:selected
+{
+    -fx-text-fill:white;
+    -fx-font:15px "Lato Black";
+    -fx-font-weight:bold;    
+    -fx-background-color: #192B38;	
+}
+#nav-btn
+{	
+    -fx-text-fill:white;
+    -fx-font:15px "Lato Black";    
+}
+#nav-btn:focused
+{
+    -fx-text-fill:white;
+    -fx-font:15px "Lato Black";
+    -fx-font-weight:bold;    
+    -fx-background-color: #192B38;	
+}
+#upload-btn
+{
+    -fx-text-fill:white;
+    -fx-font:15px "Lato"; 
+}
+#upload-btn:focused
+{
+    -fx-text-fill:white;
+    -fx-font:15px "Lato";
+    -fx-font-weight:bold;
+}
+#header
+{
+    -fx-background-color: #326B91;
+    -fx-padding: 16px;
+}
+#login-account
+{
+    -fx-background-color:#ffffff;
+    -fx-font:15px "Lato";
+    -fx-padding: 4px;
+}
+#register-field
+{
+    -fx-background-color: #ffffff;
+    -fx-font:15px "Lato";
+}
+#reg-checkbox
+{
+    -fx-text-fill: white;
+    -fx-font:17px "Lato";
+}
+#reg-lbl
+{
+    -fx-font:24px "Lato";
+    -fx-text-fill: white;
+}
+#title-pane
+{
+    -fx-background-color:  #193549;
+    -fx-padding: 0 10 0 10;
+}
+#center-pane
+{
+    -fx-background-color:  #D6E1E9;
+}
+#bottom-pane
+{
+    -fx-background-color:  #192B38;
+}
+#node-combo
+{
+    -fx-background-color:  #D6E1E9;
+}
+#uploader-pane
+{
+    -fx-border-color: #326B91;
+}
+#uploader-fields
+{
+    -fx-background-color:#FFFFFF;
+    -fx-font:15px "Lato Regular";
+    -fx-text-fill: #193549;	
+    -fx-padding: 4px;
+}
+#search-field
+{
+    -fx-font:18px "Lato";
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: white;        
+}
+#upload-progress .bar
+{    
+    -fx-background-color: #326B91;
+}
+.table-view 
+{
+    -fx-font:15px "Lato";        
+    -fx-table-cell-border-color: #78B6E4;
+}
+.table-view .table-row-cell 
+{
+    -fx-cell-size: 35px;
+    -fx-border-width: 1px;    
+}
+.status-bar 
+{
+    -fx-padding: 4px;
+    -fx-pref-height: 40px;
+    -fx-background-color: #193549;
+    -fx-body-color:#193549;
+    -fx-background-insets: 0, 1;
+}
+.status-bar > .center-items,
+.status-bar > .left-items,
+.status-bar > .right-items 
+{
+    -fx-alignment: center; 
+}
+.status-label 
+{
+    -fx-font:15px "Lato";
+    -fx-text-fill: white;
+}
+.status-combox 
+{
+    -fx-font:15px "Lato";
+    -jfx-focus-color: #193549;
+    -jfx-unfocus-color: #193549;
+}
+.status-combox > .cell
+{
+    -fx-font:15px "Lato";
+    -fx-text-fill: white;
+}
+.status-combox > .list-view > .list-cell
+{
+    -fx-font:15px "Lato"; 
+}
+.status-green 
+{
+    -fx-graphic: url("Dark/img/green.png")
+}
+.status-red 
+{
+    -fx-graphic: url("Dark/img/red.png")
+}
+.button.pressed { -fx-background-color: ghostwhite; }
+
+.button, .toggle-button {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;    
+}
+.button.loadfile { -fx-background-color: #193549; -fx-background-image: url("Dark/img/new.png"); }
+.button.savefile { -fx-background-color: #193549; -fx-background-image: url("Dark/img/save.png"); }
+.button.new { -fx-background-color: #193549; -fx-background-image: url("Dark/img/new.png") }
+.button.undo { -fx-background-color: #193549; -fx-background-image: url("Dark/img/undo.png"); }
+.button.redo { -fx-background-color: #193549; -fx-background-image: url("Dark/img/redo.png"); }
+.button.cut { -fx-background-color: #193549; -fx-background-image: url("Dark/img/cut.png"); }
+.button.copy { -fx-background-color: #193549; -fx-background-image: url("Dark/img/copy.png"); }
+.button.paste { -fx-background-color: #193549; -fx-background-image: url("Dark/img/paste.png"); }
+.button.bold { -fx-background-color: #193549; -fx-background-image: url("Dark/img/bold.png"); }
+.button.italic { -fx-background-color: #193549; -fx-background-image: url("Dark/img/italic.png"); }
+.button.underline { -fx-background-color: #193549; -fx-background-image: url("Dark/img/underline.png"); }
+.button.strikethrough { -fx-background-color: #193549; -fx-background-image: url("Dark/img/strikethrough.png"); }
+.button.insertimage { -fx-background-color: #193549; -fx-background-image: url("Dark/img/insertimage.png"); }
+.toggle-button.wrap { -fx-background-color: #193549; -fx-background-image: url("Dark/img/wrap.png"); }
+#view-btn
+{
+    -fx-background-color:#326B91 ;
+    -fx-text-fill:white;    
+    -fx-font:15px "Lato Bold"; 
+    -fx-font-weight:bold;    
+    -fx-graphic: url("Dark/img/vieww.png");
+}
+#view-btn:selected
+{ 
+    -fx-graphic: url("Dark/img/hide.png");
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="main-pane" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+		<AnchorPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+			<children>            
+				<Pane id="header" prefHeight="40.0" prefWidth="634.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+					<children>
+						<ImageView id="app-header1" fitHeight="28.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />                     
+					</children>
+				</Pane>
+				<Label id="label20b" layoutX="29.0" layoutY="66.0" text="FILE PROPERTIES" />               
+				<Pane id="uploader-pane" layoutX="29.0" layoutY="105.0" prefHeight="400.0" prefWidth="577.0">
+					<children>
+						<VBox prefHeight="360.0" prefWidth="577.0" spacing="10.0">
+							<children>
+								<Label id="label13" text="FILENAME" />
+								<JFXTextField id="uploader-fields" fx:id="nameField" prefHeight="40.0" />                                
+								<Label id="label13" text="HASH" />
+								<JFXTextField id="uploader-fields" fx:id="hashField" editable="false" prefHeight="40.0" />
+								<Label id="label13" text="NEM HASH" />
+								<JFXTextField id="uploader-fields" fx:id="nemField" editable="false" prefHeight="40.0" />
+								<Label id="label13" text="FILE SIZE" />
+								<JFXTextField id="uploader-fields" fx:id="sizeField" editable="false" prefHeight="40.0" />
+								<Label id="label13" text="DATE" />
+								<JFXTextField id="uploader-fields" fx:id="dateField" editable="false" prefHeight="40.0" />
+							</children>
+							<padding>
+								<Insets left="10.0" right="10.0" />
+							</padding>
+						</VBox>                        
+					</children>
+				</Pane>                    
+				<JFXButton id="prxbx-btn" layoutX="308.0" layoutY="485.0" onAction="#renameBtn" prefHeight="38.0" prefWidth="137.0" text="RENAME" />
+				<JFXButton id="prxbx-btn" layoutX="458.0" layoutY="485.0" onAction="#closeBtn" prefHeight="38.0" prefWidth="137.0" text="CLOSE" />
+			</children>
+		</AnchorPane>
+    </children>
+</AnchorPane>

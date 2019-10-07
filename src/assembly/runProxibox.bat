@@ -1,0 +1,1 @@
+java -cp bcprov-jdk15on-1.58.jar;proxibox-2.0.1-SNAPSHOT-fat.jar io.proximax.app.main.ProxiBox %1

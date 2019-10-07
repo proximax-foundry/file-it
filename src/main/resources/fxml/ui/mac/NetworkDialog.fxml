@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="main-pane" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+	<center>                
+		<AnchorPane minHeight="0.0" minWidth="0.0">
+			<children>
+				<Label id="label20b" fx:id="titleLbl" text="NETWORK CONFIGURATION" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0" />                        
+				<GridPane id="uploader-pane" hgap="10.0" prefHeight="380.0" vgap="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0">
+					<columnConstraints>
+						<ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="90.0" />
+						<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="440.0" />                                
+						<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" /> 
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints minHeight="10.0" prefHeight="40.0" />
+						<RowConstraints minHeight="10.0" prefHeight="40.0" />
+						<RowConstraints minHeight="10.0" prefHeight="80.0" />
+						<RowConstraints minHeight="10.0" prefHeight="40.0" />
+						<RowConstraints minHeight="10.0" prefHeight="80.0" />
+					</rowConstraints>                        
+					<children>
+						<Label id="label13b" prefHeight="30.0" text="NETWORK" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+						<JFXComboBox id="uploader-fields" fx:id="networkCbx" prefHeight="31.0" prefWidth="520.0" promptText="    Network" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.vgrow="ALWAYS">
+							<items>
+								<FXCollections fx:factory="observableArrayList">                                                
+								</FXCollections>
+							</items>               
+						</JFXComboBox>                                
+						<Label id="label13b" prefHeight="30.0" text="NODES" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+						<JFXTextField id="uploader-fields" fx:id="nodeField" layoutX="142.0" prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+						<JFXButton id="nav-btn1" fx:id="addNodeBtn" mnemonicParsing="false" onAction="#addNodeBtn" prefHeight="30.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="1">
+							<graphic>
+								<ImageView id="add-img" fitHeight="20.0" fitWidth="20.0" />
+							</graphic>
+						</JFXButton>
+						<JFXListView id="nodes-list" fx:id="nodesLv" prefHeight="60.0" prefWidth="520.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+							<items>
+								<FXCollections fx:factory="observableArrayList">                                                
+								</FXCollections>
+							</items>               
+						</JFXListView>
+						<VBox spacing="10.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+							<children>
+								<JFXButton id="nav-btn1" mnemonicParsing="false" onAction="#removeNodeBtn" prefHeight="30.0" text="">                                            
+									<graphic>
+										<ImageView id="remove-img" fitHeight="20.0" fitWidth="20.0" />
+									</graphic>
+								</JFXButton>                                        
+							</children>
+						</VBox>
+						<Label id="label13b" prefHeight="30.0" text="IPFS SERVER" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+						<JFXTextField id="uploader-fields" fx:id="ipfsField" prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+						<JFXButton id="nav-btn1" fx:id="addIpfsBtn"  mnemonicParsing="false" onAction="#addIpfsBtn" prefHeight="30.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="3">                                                           
+							<graphic>
+								<ImageView id="add-img" fitHeight="20.0" fitWidth="20.0" />
+							</graphic>
+						</JFXButton>
+						<JFXListView id="nodes-list" fx:id="ipfsLv" prefHeight="31.0" prefWidth="520.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+							<items>
+								<FXCollections fx:factory="observableArrayList">                                                
+								</FXCollections>
+							</items>               
+						</JFXListView>
+						<VBox spacing="10.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+							<children>
+								<JFXButton id="nav-btn1" mnemonicParsing="false" onAction="#removeIpfsBtn" prefHeight="30.0" text="">      
+									<graphic>
+										<ImageView id="remove-img" fitHeight="20.0" fitWidth="20.0" />
+									</graphic>
+								</JFXButton>                                        
+							</children>
+						</VBox>
+					</children>                     
+			 <padding>
+				<Insets bottom="40.0" top="10.0" />
+			 </padding>                            
+				</GridPane>
+				<JFXButton id="prxbx-btn" layoutX="381.0" layoutY="423.0" onAction="#saveBtn" prefWidth="100.0" text="OK" />                            
+				<JFXButton id="prxbx-btn" layoutX="489.0" layoutY="423.0" onAction="#closeBtn" prefWidth="100.0" text="CANCEL" />                        
+			</children>
+		</AnchorPane>                           
+	</center>            
+	<top>            
+		<HBox id="header" alignment="CENTER_LEFT" prefHeight="43.0" BorderPane.alignment="CENTER">
+			<children>                    
+				<ImageView id="app-header1" fitHeight="28.0" pickOnBounds="true" preserveRatio="true" />                        
+				<BorderPane HBox.hgrow="ALWAYS">
+					<top>
+						<HBox alignment="TOP_RIGHT">
+							<children>                                        
+								<JFXButton graphicTextGap="0.0" onAction="#closeBtn" prefHeight="17.0" prefWidth="32.0" text=" ">
+									<graphic>
+										<ImageView id="close-img" fitHeight="18.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" />                                            
+									</graphic>
+								</JFXButton>
+							</children>
+						</HBox>
+					</top>                        
+				</BorderPane>
+			</children>
+		</HBox>
+	</top>            
+</BorderPane>    

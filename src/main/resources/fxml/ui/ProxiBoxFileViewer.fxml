@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="shadow-pane" fx:id="shadowPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <BorderPane id="main-pane" fx:id="mainPane" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+            <top>            
+                <HBox id="header" alignment="CENTER_LEFT" prefHeight="40.0" BorderPane.alignment="CENTER">                    
+                    <children>
+                        <ImageView id="app-header1" fitHeight="28.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+                        <BorderPane HBox.hgrow="ALWAYS">
+                            <top>
+                                <HBox alignment="TOP_RIGHT">
+                                    <children>
+                                        <JFXButton graphicTextGap="0.0" onAction="#minimizeBtn" prefHeight="25.0" prefWidth="23.0" text=" ">
+                                            <graphic>
+                                                <ImageView id="min-img" fitHeight="18.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" />                                            
+                                            </graphic>
+                                        </JFXButton>
+                                        <JFXButton graphicTextGap="0.0" onAction="#maximizeBtn" prefHeight="25.0" prefWidth="23.0" text=" ">
+                                            <graphic>
+                                                <ImageView id="max-img" fitHeight="18.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" />                                            
+                                            </graphic>
+                                        </JFXButton>                                                                        
+                                        <JFXButton graphicTextGap="0.0" onAction="#closeBtn" prefHeight="17.0" prefWidth="32.0" text=" ">
+                                            <graphic>
+                                                <ImageView id="close-img" fitHeight="18.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" />                                            
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                </HBox>
+                            </top>                        
+                        </BorderPane>    
+                    </children>                                           
+                </HBox>                
+            </top>
+            <center>                
+                <WebView fx:id="webView" prefHeight="600.0" prefWidth="800.0" />
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

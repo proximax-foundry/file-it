@@ -1,0 +1,29 @@
+<assembly>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <fileSets>
+        <fileSet>
+            <directory>src/assembly</directory>
+            <outputDirectory />
+            <includes>
+                <include>**/*.jar</include>
+                <include>**/*.bat</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>target</directory>
+            <outputDirectory />
+            <includes>
+                <include>**/*-fat.jar</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>target/lib</directory>
+            <outputDirectory />
+            <includes>
+                <include>bcprov-jdk15on-1.58.jar</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</assembly>

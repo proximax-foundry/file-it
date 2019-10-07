@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane id="main-pane" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+	<center>
+		<AnchorPane prefHeight="560.0" BorderPane.alignment="CENTER">
+			<children>
+				<HBox alignment="CENTER" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="30.0">
+					<children>
+						<ImageView id="app-logo2" fitHeight="70.0" pickOnBounds="true" preserveRatio="true" />
+					</children>
+				</HBox>
+				<AnchorPane prefHeight="358.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="100.0">
+					<children>
+						<Pane id="login-line" layoutY="33.0" prefHeight="2.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" />                                    
+						<JFXComboBox id="login-account" fx:id="usernameCbx" layoutY="75.0" prefHeight="40.0" promptText="    Username" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="100.0">
+							<items>
+								<FXCollections fx:factory="observableArrayList">                                                
+								</FXCollections>
+							</items>               
+						</JFXComboBox>
+						<JFXButton id="nav-btn1" layoutY="75.0" onAction="#networkBtn" prefHeight="40.0" prefWidth="40.0" text="" AnchorPane.rightAnchor="55.0">
+							<graphic>
+								<ImageView id="netcfg-img" fitHeight="20.0" fitWidth="20.0" />
+							</graphic>
+						</JFXButton>
+						<JFXPasswordField id="login-account" fx:id="passwordField" layoutY="156.0" prefHeight="40.0" promptText="   Password" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="100.0" />
+						<JFXTextField id="login-account" fx:id="passField" layoutY="156.0" prefHeight="40.0" promptText="   Password" visible="false" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="100.0" />
+						<ToggleButton id="view-btn" fx:id="viewBtn" layoutY="156.0" prefHeight="40.0" prefWidth="40.0" text="" AnchorPane.rightAnchor="55.0" />
+							
+						<JFXButton id="prxbx-btn" layoutX="71.0" layoutY="245.0" onAction="#loginBtn" prefHeight="38.0" prefWidth="427.0" text="LOGIN" />
+						<JFXButton id="prxbx-btn" layoutX="71.0" layoutY="310.0" onAction="#registerBtn" prefHeight="38.0" prefWidth="427.0" text="REGISTER" />                            
+						<Label id="comment-lbl" layoutY="125.0" text="Select a user in local storage" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" />
+					</children>
+				</AnchorPane>				
+			</children>
+		</AnchorPane>
+	</center>
+	<bottom>
+		<HBox id="login-footer" alignment="CENTER" prefHeight="60.0">
+			<children>
+				<Label id="pwr-lbl" text="Powered by  " />                    
+				<ImageView id="proximax-logo" fitHeight="23.0" pickOnBounds="true" preserveRatio="true" />
+			</children>
+		</HBox>        
+	</bottom>            
+</BorderPane>        

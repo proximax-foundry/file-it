@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="shadow-pane" fx:id="shadowPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane id="main-pane" fx:id="mainPane" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+            <children>
+                <AnchorPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <children>            
+                        <Pane id="header" prefHeight="40.0" prefWidth="634.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <children>
+                                <ImageView id="app-header1" fitHeight="28.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />                     
+                            </children>
+                        </Pane>
+                        <Label id="label20b" layoutX="29.0" layoutY="66.0" text="USER PROFILE" />               
+                        <VBox id="uploader-pane" layoutX="29.0" layoutY="105.0" prefHeight="550.0" prefWidth="577.0" spacing="10.0">
+                            <children>
+                                <Label id="label13b" text="NAME" />
+                                <JFXTextField id="uploader-fields" fx:id="nameField" editable="false" prefHeight="40.0" />                                
+                                <Label id="label13b" text="ADDRESS" />
+                                <JFXTextField id="uploader-fields" fx:id="addressField" editable="false" prefHeight="40.0" />
+                                <Label id="label13b" text="PUBLIC KEY" />
+                                <JFXTextField id="uploader-fields" fx:id="publicField" editable="false" prefHeight="40.0" />
+                                <Label id="label13b" text="PRIVATE KEY" />
+                                <JFXTextField id="uploader-fields" fx:id="privateField" editable="false" prefHeight="40.0" />
+                                <Label id="label13b" text="PEER ID" />
+                                <JFXTextField id="uploader-fields" fx:id="peerField" editable="false" prefHeight="40.0" />
+                                <Label id="label13b" text="STORAGE" />
+                                <JFXTextField id="uploader-fields" fx:id="storageField" editable="false" prefHeight="40.0" />
+                                <Label id="label13b" text="XPX" />
+                                <JFXTextField id="uploader-fields" fx:id="xpxField" editable="false" prefHeight="40.0" />
+                            </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                        </VBox>
+                        <JFXButton fx:id="xpxBtn" id="prxbx-btn" layoutX="40.0" layoutY="664.0" onAction="#xpxBtn" prefHeight="38.0" prefWidth="100.0" text="GET XPX" />
+                        <JFXButton id="prxbx-btn" layoutX="155.0" layoutY="664.0" onAction="#saveBtn" prefHeight="38.0" prefWidth="300.0" text="SAVE TO PROXIMAX CENTRAL DATA" />
+                        <JFXButton id="prxbx-btn" layoutX="468.0" layoutY="664.0" onAction="#closeBtn" prefHeight="38.0" prefWidth="120.0" text="CLOSE" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
