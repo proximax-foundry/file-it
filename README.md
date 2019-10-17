@@ -41,7 +41,7 @@
 
 6. Sharing Dialog
 
-![Sharing](https://user-images.githubusercontent.com/40444940/66980002-af3b9d80-f0d9-11e9-884d-274401c380be.png)
+![Sharing](https://user-images.githubusercontent.com/40444940/66981483-11969d00-f0de-11e9-84d7-0a25028675aa.png)
 
 7. User Profile Dialog
 
