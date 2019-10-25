@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.proximax.app</groupId>
     <artifactId>file-it</artifactId>
-    <version>0.5.1</version>    
+    <version>0.6.0</version>
     <properties>
             <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
     </properties>
@@ -102,16 +102,21 @@
             <version>3.5.0</version>
             <scope>compile</scope>
           </dependency>
-          
+         <dependency>
+            <groupId>org.threeten</groupId>
+            <artifactId>threetenbp</artifactId>
+            <version>1.4.0</version>
+            <scope>compile</scope>
+        </dependency>
         <dependency>
             <groupId>io.proximax</groupId>
             <artifactId>java-xpx-chain-sdk</artifactId>
-            <version>0.5.1</version>
+            <version>0.6.0</version>
         </dependency>
         <dependency>
             <groupId>io.proximax</groupId>
             <artifactId>java-chain-xipfs-sdk</artifactId>
-            <version>0.5.0</version>
+            <version>0.6.0</version>
         </dependency>
         <dependency>
             <groupId>io.proximax</groupId>
